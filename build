@@ -1,5 +1,0 @@
-npm install
-cake build
-cake copy
-
-echo 'Build complete'
