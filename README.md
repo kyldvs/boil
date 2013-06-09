@@ -21,9 +21,6 @@ Libraries Used
 Setup
 -----
 
-1. install npm packages
-  npm install
-2. build application
-  grunt
-3. start application
-  npm start
+1. install npm packages: `npm install`
+2. build application: `grunt`
+3. start application: `npm start`
