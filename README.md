@@ -3,7 +3,7 @@ Boiler Plate Application
 
 This is some boiler plate for creating web applications.
 
-## 1. Libraries Used
+### 1. Libraries Used
 
   + Node
   + Express
@@ -17,7 +17,7 @@ This is some boiler plate for creating web applications.
   + Require
   + Backbone
 
-## 2. Setup
+### 2. Setup
 
   1. install npm packages: `npm install`
   2. build application: `grunt`
