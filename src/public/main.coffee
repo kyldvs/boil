@@ -1,10 +1,11 @@
 deps = [
+  'jquery',
   'backbone',
   'react',
-  'jsx!templates/commentBox'
+  'jsx!x/commentBox'
 ]
 
-define deps, (Backbone, React, CommentBox) ->
+define deps, ($, Backbone, React, CommentBox) ->
   AppRouter = Backbone.Router.extend(
     routes:
       'home': 'home'
