@@ -6,16 +6,21 @@
     "start": "node bin/app"
   },
   "dependencies": {
-    "backbone": "1.0.0",
-    "coffee-script": "*",
-    "express": "3.1.0",
-    "jquery": "2.0.1"
+    "backbone": "~1.0.0",
+    "coffee-script": "~1.6.3",
+    "express": "~3.2.6",
+    "jade": "~0.31.2",
+    "jquery": "~1.8.3",
+    "stylus": "~0.32.1",
+    "underscore": "~1.4.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-coffeelint": "0.0.6",
+    "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-clean": "~0.4.1"
+    "grunt-contrib-jade": "~0.7.0",
+    "grunt-contrib-stylus": "~0.5.0"
   }
 }

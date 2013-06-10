@@ -9,13 +9,12 @@ This is some boiler plate for creating web applications.
   + Express
   + Coffeescript
   + Grunt
-    + Coffeelint
-    + Contrib-coffee
-    + Contrib-copy
-    + Contrib-clean
   + Jquery
-  + Require
   + Backbone
+  + Stylus
+  + Underscore
+  + Browserify
+  + React
 
 ### 2. Setup
 
