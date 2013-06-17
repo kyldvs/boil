@@ -10,6 +10,7 @@ This is some boiler plate for creating web applications.
   + [Jade](http://jade-lang.com/)
   + [Coffeescript](http://coffeescript.org/)
   + [Grunt](http://gruntjs.com/)
+  + [Jshint](http://www.jshint.com/)
   + [Jquery](http://jquery.com/)
   + [Backbone](http://backbonejs.org/)
   + [Stylus](http://learnboost.github.io/stylus/)
@@ -39,11 +40,11 @@ This is some boiler plate for creating web applications.
 
 ### 5. Styling
 
-  My personal preference is stylus. Specify the stylesheets in `views/css.jade`
+  My personal preference is stylus. Specify the stylesheets in `views/css.jade`.
 
 ### 6. Jade
 
-  There is a very simple jade file to act as an entrance point into the application. `views/index.jade` doesn't have any major html, instead mount different jsx classes onto `#content`, see `public/main.coffee`
+  There is a very simple jade file to act as an entrance point into the application. `views/index.jade` doesn't have any major html, instead mount different react classes onto `#content`, see `public/main.coffee`.
 
 
 

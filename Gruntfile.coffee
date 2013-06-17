@@ -66,7 +66,6 @@ module.exports = (grunt) ->
         src: '**/*.jsx'
         dest: 'bin/'
         ext: '.js'
-
   }
 
   # Default task
