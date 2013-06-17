@@ -10,7 +10,6 @@ This is some boiler plate for creating web applications.
   + [Jade](http://jade-lang.com/)
   + [Coffeescript](http://coffeescript.org/)
   + [Grunt](http://gruntjs.com/)
-  + [Jshint](http://www.jshint.com/)
   + [Jquery](http://jquery.com/)
   + [Backbone](http://backbonejs.org/)
   + [Stylus](http://learnboost.github.io/stylus/)
