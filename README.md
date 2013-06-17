@@ -7,6 +7,7 @@ This is some boiler plate for creating web applications.
 
   + Node
   + Express
+  + Jade
   + Coffeescript
   + Grunt
   + Jquery
