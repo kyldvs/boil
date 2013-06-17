@@ -1,3 +1,5 @@
+react = require 'react-tools'
+
 endsWith = (str, suffix) ->
   str.indexOf(suffix, str.length - suffix.length) != -1
 
@@ -37,27 +39,17 @@ module.exports = (grunt) ->
         src: '**/*'
         dest: 'bin/'
         filter: (path) ->
-          ignore = ['.coffee', '.styl']
+          # Filetypes to ignore from anywhere within /src/
+          ignore = ['.coffee', '.styl', '.jsx']
           for type in ignore
             return false if endsWith path, type
 
-          ignorePublic = ['.jade']
+          # Filetypes to ignore, but only when in /public/
+          ignorePublic = []
           for type in ignorePublic
             return false if endsWith path, type and contains path, '/public/'
 
           return true
-
-    jade:
-      public:
-        expand: true
-        cwd: 'src/public/'
-        src: '**/*.jade'
-        dest: 'bin/public/'
-        ext: '.js'
-        options:
-          pretty: true
-          client: true
-          compileDebug: false
 
     stylus:
       compile:
@@ -66,6 +58,14 @@ module.exports = (grunt) ->
         src: '**/*.styl'
         dest: 'bin/'
         ext: '.css'
+
+    jsx:
+      compile:
+        expand: true
+        cwd: 'src'
+        src: '**/*.jsx'
+        dest: 'bin/'
+        ext: '.js'
 
   }
 
@@ -77,18 +77,24 @@ module.exports = (grunt) ->
     'clean',
     'coffeelint',
     'coffee',
-    'jade',
+    'jsx',
     'stylus',
     'copy',
   ]
 
   grunt.registerTask 'lint', ['coffeelint']
-  grunt.registerTask 'start', []
+
+  # Compile jsx
+  grunt.registerMultiTask 'jsx', 'Compile jsx into js', () ->
+    this.files.forEach (file) ->
+      src = grunt.file.read file.src
+      transformed = react.transform src
+      grunt.file.write file.dest, transformed
+      grunt.log.writeln 'Converted jsx to ' + file.dest
 
   # Load npm tasks
   grunt.loadNpmTasks 'grunt-coffeelint'
   grunt.loadNpmTasks 'grunt-contrib-clean'
   grunt.loadNpmTasks 'grunt-contrib-coffee'
   grunt.loadNpmTasks 'grunt-contrib-copy'
-  grunt.loadNpmTasks 'grunt-contrib-jade'
   grunt.loadNpmTasks 'grunt-contrib-stylus'

@@ -5,8 +5,6 @@ requirejs.config
     'underscore': 'lib/underscore'
     'jquery': 'lib/jquery'
     'react': 'lib/react'
-    'jsx': 'lib/jsx'
-    'JSXTransformer': 'lib/JSXTransformer'
 
   'shim':
     'backbone':
@@ -18,7 +16,5 @@ requirejs.config
       exports: '$'
     'react':
       exports: 'React'
-    'JSXTransformer':
-      exports: 'JSXTransformer'
 
 requirejs ['main']

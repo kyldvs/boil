@@ -2,17 +2,18 @@ deps = [
   'jquery',
   'backbone',
   'react',
-  'jsx!x/commentBox'
+  'jsx/hello'
 ]
 
-define deps, ($, Backbone, React, CommentBox) ->
+define deps, ($, Backbone, React, Hello) ->
   AppRouter = Backbone.Router.extend(
     routes:
-      'home': 'home'
+      # The route /#/index calls the method hello
+      'index': 'hello'
 
-    home: () ->
-      console.log '/#/home'
-      React.renderComponent CommentBox(), $('#content')[0]
+    hello: () ->
+      # Mount the react component <Hello> onto dom element #content
+      React.renderComponent Hello(), $('#content')[0]
   )
 
   router = new AppRouter()
