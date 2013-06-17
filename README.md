@@ -13,8 +13,8 @@ This is some boiler plate for creating web applications.
   + Backbone
   + Stylus
   + Underscore
-  + Browserify
   + React
+  + JSX
 
 ### 2. Setup
 
