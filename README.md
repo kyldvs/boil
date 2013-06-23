@@ -16,6 +16,7 @@ This is some boiler plate for creating web applications.
   + [Underscore](http://underscorejs.org/)
   + [React](http://facebook.github.io/react/)
   + [JSX](http://facebook.github.io/react/docs/syntax.html)
+  + [Require](http://requirejs.org/)
 
 ### 2. Setup
 
