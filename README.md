@@ -95,8 +95,8 @@ This is some boiler plate for creating web applications.
 
 ### 5. Startup
 
-  There are two startup scripts located in `scripts` running `npm start`
-  launches the server by running `scripts/dev.sh` and is intended for testing.
-  To launch a server on port 80 that will be persistent even if you close the
+  There are two startup scripts located in `scripts`. Executing `npm start`
+  launches the server by using `scripts/dev.sh` and is intended for testing.
+  To launch a server on port 80 that will persist even if you close the
   terminal you can execute `npm run prod` with root privileges. This starts the
-  applications with `scripts/prod.sh` and will also write all logs to a file.
+  application with `scripts/prod.sh` and will also write all logs to a file.
