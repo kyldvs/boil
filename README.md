@@ -20,9 +20,11 @@ This is some boiler plate for creating web applications.
 
 ### 2. Setup
 
-  1. install npm packages: `npm install`
-  2. build application: `grunt`
-  3. start application: `npm start`
+  1. Install global packages `sudo npm install -g grunt-cli coffee-script`
+  2. Install local packages: `npm install`
+  3. Build application: `grunt`
+  4. Start application: `npm start`
+  5. Navigate to `localhost:3000/#/index`
 
 ### 3. Language
 
