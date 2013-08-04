@@ -2,26 +2,34 @@
   "name": "application-name",
   "version": "0.0.1",
   "private": true,
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/repo"
+  },
+
   "scripts": {
-    "start": "node bin/app"
+    "start": "sh ./scripts/dev.sh",
+    "prod": "sh ./scripts/prod.sh"
   },
+
   "dependencies": {
-    "backbone": "~1.0.0",
-    "coffee-script": "~1.6.3",
-    "express": "~3.2.6",
-    "jade": "~0.31.2",
-    "jquery": "~1.8.3",
-    "stylus": "~0.32.1",
-    "underscore": "~1.4.4"
+    "backbone": "*",
+    "express": "*",
+    "jade": "*",
+    "jquery": "*",
+    "stylus": "*",
+    "underscore": "*"
   },
+
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-coffeelint": "0.0.6",
-    "grunt-contrib-clean": "~0.4.1",
-    "grunt-contrib-coffee": "~0.7.0",
-    "grunt-contrib-copy": "~0.4.1",
-    "grunt-contrib-jade": "~0.7.0",
-    "grunt-contrib-stylus": "~0.5.0",
-    "react-tools": "~0.3.2"
+    "grunt": "*",
+    "grunt-coffeelint": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-contrib-coffee": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-jade": "*",
+    "grunt-contrib-stylus": "*",
+    "react-tools": "*"
   }
 }
