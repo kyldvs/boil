@@ -47,8 +47,8 @@ This is some boiler plate for creating web applications.
     build an application split up into many modules that depend on other
     modules within your application.
 
-  + [React](http://facebook.github.io/react/)
-  + [JSX](http://facebook.github.io/react/docs/syntax.html)
+  + [React](http://facebook.github.io/react/),
+    [JSX](http://facebook.github.io/react/docs/syntax.html)
 
     React allows you to easily make components that render onto the page that
     are very dynamic and when updating, update the DOM efficiently. JSX is used
@@ -61,8 +61,7 @@ This is some boiler plate for creating web applications.
     [Angular](http://docs.angularjs.org/api/)) but it would server a similar
     purpose.
 
-  + [Jquery](http://jquery.com/)
-  + [Underscore](http://underscorejs.org/)
+  + [Jquery](http://jquery.com/), [Underscore](http://underscorejs.org/)
 
     These two libraries are like the swiss army knife of web development.
 
